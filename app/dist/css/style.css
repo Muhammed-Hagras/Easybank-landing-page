@@ -186,7 +186,7 @@ button,
 }
 
 .has-fade {
-  visibility: visible;
+  visibility: hidden;
 }
 
 @keyframes fade-in {
