@@ -10,13 +10,12 @@
     margin-bottom: 30px;
   }
 
-  .features__boxes {
+  .features__items {
     @include breakpoint-up(medium) {
       display: flex;
       flex-wrap: wrap;
     }
     .feat {
-      border: 1px solid #f00;
       padding: 0.9375rem;
 
       @include breakpoint-up(medium) {
