@@ -1,6 +1,6 @@
 .header {
   position: relative;
-
+  z-index: 1;
   // Hamburger Open Styles
   &.open {
     .header__toggle {
@@ -93,20 +93,6 @@
           opacity: 1;
         }
       }
-    }
-  }
-
-  &__cta {
-    font-size: $font-sm;
-    color: $white;
-    transition: opacity 0.3s ease-in-out;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-
-    &:hover {
-      opacity: 0.75;
     }
   }
 

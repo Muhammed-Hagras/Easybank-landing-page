@@ -26,6 +26,12 @@ body {
   }
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
+
 //flexbox
 .flex {
   display: flex;
@@ -51,6 +57,12 @@ a:hover {
   text-decoration: none;
 }
 
+// Spacing
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 //Buttons
 button,
 .button {
@@ -74,6 +86,10 @@ button,
   -moz-transition: opacity 0.3s ease-in-out;
   -ms-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 // Visibility

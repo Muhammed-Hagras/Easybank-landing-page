@@ -23,6 +23,12 @@ body.no-scroll {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -43,6 +49,11 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 button,
@@ -68,6 +79,10 @@ button,
   -ms-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
 }
+button:hover,
+.button:hover {
+  opacity: 0.75;
+}
 
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
@@ -83,6 +98,7 @@ button,
 
 .header {
   position: relative;
+  z-index: 1;
 }
 .header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
@@ -156,18 +172,6 @@ button,
 .header__links a:hover::before {
   opacity: 1;
 }
-.header__cta {
-  font-size: 0.875rem;
-  color: hsl(0, 0%, 100%);
-  transition: opacity 0.3s ease-in-out;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-}
-.header__cta:hover {
-  opacity: 0.75;
-}
 .header__menu {
   position: absolute;
   background: hsl(0, 0%, 100%);
@@ -183,6 +187,85 @@ button,
   color: hsl(233, 26%, 24%);
   display: block;
   padding: 0.625rem;
+}
+
+.hero {
+  background-color: hsl(0, 0%, 98%);
+}
+@media (min-width: 64em) {
+  .hero .container {
+    display: flex;
+    align-items: center;
+  }
+}
+.hero__image {
+  position: relative;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 70%;
+  }
+}
+@media (min-width: 64em) {
+  .hero__image {
+    flex: 3;
+    order: 2;
+    height: 41rem;
+    background-image: none;
+  }
+}
+@media (min-width: 64em) {
+  .hero__image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 150%;
+    background-size: 122%;
+    background-position: 0% 83%;
+  }
+}
+.hero__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/image-mockups.png");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+@media (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
+}
+@media (min-width: 64em) {
+  .hero__image::after {
+    width: 120%;
+    height: 122%;
+    background-size: 94%;
+    background-position: center 150%;
+    left: 22%;
+  }
+}
+.hero__text {
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 2;
+    order: 1;
+    text-align: left;
+  }
 }
 
 .has-fade {
