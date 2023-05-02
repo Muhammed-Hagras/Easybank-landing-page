@@ -1,0 +1,52 @@
+.features {
+  background-color: $lightGrayishBlue;
+  text-align: center;
+
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
+
+  .features__intro {
+    margin-bottom: 30px;
+  }
+
+  .features__boxes {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .feat {
+      border: 1px solid #f00;
+      padding: 0.9375rem;
+
+      @include breakpoint-up(medium) {
+        flex: 1 0 50%;
+      }
+
+      @include breakpoint-up(large) {
+        flex: 1;
+      }
+
+      .feat__icon {
+        margin-bottom: 1.875rem;
+
+        @include breakpoint-up(large) {
+          margin-bottom: 2.75rem;
+        }
+      }
+
+      .feat__title {
+        margin-bottom: 1rem;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 1.15;
+        color: $darkBlue;
+      }
+
+      .feat__desc {
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}

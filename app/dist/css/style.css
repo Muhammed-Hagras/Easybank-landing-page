@@ -51,9 +51,98 @@ a:hover {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: hsl(233, 26%, 24%);
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+}
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
 .container {
-  padding-left: 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+.container--pall {
+  padding-top: 4.375rem;
   padding-right: 1.5rem;
+  padding-bottom: 4.375rem;
+  padding-left: 1.5rem;
+}
+@media (min-width: 64em) {
+  .container--pall {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.container--py {
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.container--px {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.container--pt {
+  padding-top: 4.375rem;
+}
+@media (min-width: 64em) {
+  .container--pt {
+    padding-top: 6rem;
+  }
+}
+.container--pr {
+  padding-right: 1.5rem;
+}
+.container--pb {
+  padding-bottom: 4.375rem;
+}
+@media (min-width: 64em) {
+  .container--pb {
+    padding-bottom: 6rem;
+  }
+}
+.container--pl {
+  padding-left: 1.5rem;
 }
 
 button,
@@ -266,6 +355,58 @@ button:hover,
     order: 1;
     text-align: left;
   }
+}
+
+.features {
+  background-color: hsl(220, 16%, 96%);
+  text-align: center;
+}
+@media (min-width: 40em) {
+  .features {
+    text-align: left;
+  }
+}
+.features .features__intro {
+  margin-bottom: 30px;
+}
+@media (min-width: 40em) {
+  .features .features__boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.features .features__boxes .feat {
+  border: 1px solid #f00;
+  padding: 0.9375rem;
+}
+@media (min-width: 40em) {
+  .features .features__boxes .feat {
+    flex: 1 0 50%;
+  }
+}
+@media (min-width: 64em) {
+  .features .features__boxes .feat {
+    flex: 1;
+  }
+}
+.features .features__boxes .feat .feat__icon {
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 64em) {
+  .features .features__boxes .feat .feat__icon {
+    margin-bottom: 2.75rem;
+  }
+}
+.features .features__boxes .feat .feat__title {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.15;
+  color: hsl(233, 26%, 24%);
+}
+.features .features__boxes .feat .feat__desc {
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .has-fade {
