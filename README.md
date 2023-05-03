@@ -1,6 +1,12 @@
 # Easybank landing page
 
-> Frontend Mentor -  Easybank landing page
+> Frontend Mentor -  Easybank landing page using HTML_SASS_JS
+
+## Used texhniques-tricks
+
+- Flex Box
+- CSS Grid
+- CSS Animation
 
 # Front-end Style Guide
 
@@ -36,3 +42,8 @@ The designs were created to the following widths:
 
 - Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
 - Weights: 300, 400, 700
+
+
+### `Live Demo`
+
+Open [https://hagras-easybank.netlify.app/](https://hagras-easybank.netlify.app/) to view it.
