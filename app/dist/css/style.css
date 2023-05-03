@@ -604,6 +604,9 @@ button:hover::before,
     justify-self: end;
   }
 }
+.footer .attribution {
+  margin-top: 3rem;
+}
 
 .has-fade {
   visibility: hidden;
