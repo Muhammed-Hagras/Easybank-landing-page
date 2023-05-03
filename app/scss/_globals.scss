@@ -20,6 +20,7 @@ body {
   color: $grayishBlue;
   line-height: 1.3;
   overflow-x: hidden;
+  height: 300vh;
 
   &.no-scroll {
     overflow: hidden;
@@ -160,16 +161,16 @@ button,
   overflow: hidden;
   border: 0;
   font-size: $font-sm;
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 
   &:hover {
     opacity: 0.75;
