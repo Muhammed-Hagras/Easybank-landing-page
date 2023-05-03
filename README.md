@@ -1,3 +1,7 @@
+# Easybank landing page
+
+> Frontend Mentor -  Easybank landing page
+
 # Front-end Style Guide
 
 ## Layout
