@@ -2,7 +2,7 @@
 
 > Frontend Mentor -  Easybank landing page using HTML_SASS_JS
 
-## Used texhniques-tricks
+## Used techniques-tricks
 
 - Flex Box
 - CSS Grid
